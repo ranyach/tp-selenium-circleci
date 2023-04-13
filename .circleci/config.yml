@@ -1,8 +1,6 @@
 # Use the latest 2.1 version of CircleCI pipeline process engine.
 # See: https://circleci.com/docs/configuration-reference
 version: 2.1
-orbs:
-  maven: circleci/maven@1.0.0
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/configuration-reference/#jobs
@@ -25,5 +23,4 @@ jobs:
 workflows:
   tests-selenium-workflow:
     jobs:
-      - tests-selenium :
-          executor: java20
+      - tests-selenium
