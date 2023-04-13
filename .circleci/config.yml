@@ -25,4 +25,5 @@ jobs:
 workflows:
   tests-selenium-workflow:
     jobs:
-      - tests-selenium
+      - tests-selenium :
+          executor: java20
